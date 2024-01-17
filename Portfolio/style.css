@@ -1,0 +1,156 @@
+.myname {
+    font-family: "Caveat";
+    font-size: 50px;
+}
+
+.Header-container {
+    background-color: #9aa5b1;
+}
+
+.Home-container {
+
+    background-color: #FFFFFF;
+
+}
+
+.heading {
+    font-family: "Roboto";
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.Homepara {
+    font-family: "Roboto";
+    font-size: 15px;
+    color: #8b0000;
+
+}
+
+.button {
+    background-color: #4b6cc1;
+    color: #ffffff;
+    height: 40px;
+    width: 120px;
+    border-radius: 6px;
+    border-width: 0px;
+}
+
+.Homeimage {
+    width: 75%;
+}
+
+.About-container {
+    background-color: #FFFFFF;
+
+}
+
+
+.heading {
+    color: #000000;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.para {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.paragraph {
+    color: black;
+    font-family: "Roboto";
+    font-size: 15px;
+    text-align: justify;
+
+}
+
+.Projectparagraph {
+    color: #ADD8E6;
+    font-family: "Roboto";
+    font-size: 15px;
+    text-align: justify;
+
+}
+
+.Aboutimage {
+    width: 100%;
+}
+
+.skill-container {
+    background-color: #FFFFFF;
+}
+
+.background {
+    background-color: #323f4b;
+    border-radius: 10px;
+    border-width: 0px;
+    text-align: center;
+}
+
+.images {
+    height: 50px;
+    width: 50px;
+}
+
+.Project-card {
+    background-color: #3e4c59;
+    border-radius: 10px;
+}
+
+.Project-container {
+    background-color: #FFFFFF;
+}
+
+.Project-title {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 20px;
+}
+
+.main-heading {
+    color: #9aa5b1;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+.Resume-container {
+    background-color: #FFFFFF;
+}
+
+
+.buttontext {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 15px;
+    color: Red;
+    text-decoration: underline;
+}
+
+.Footer-container {
+    background-color: #001c32;
+    width: 100vw;
+}
+
+.Footbackground {
+    background-color: #0d2436;
+    width: 100vw;
+}
+
+.contactheading {
+
+    color: #cced00;
+    font-family: "Roboto";
+    font-size: 15px;
+
+}
+
+.Footerimage {
+    border-radius: 40px;
+    height: 90px;
+    width: 100px;
+    margin: 5px;
+}
