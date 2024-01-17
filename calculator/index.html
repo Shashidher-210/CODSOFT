@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .calculator {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(50px, auto);
+            gap: 10px;
+            margin: 0 auto;
+            width: 300px;
+        }
+
+        button {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .zero {
+            grid-column: span 2;
+        }
+
+        .display {
+            grid-column: span 4;
+            background-color: #333;
+            color: white;
+            text-align: right;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display">0</div>
+        <button onclick="appendNumber(7)">7</button>
+        <button onclick="appendNumber(8)">8</button>
+        <button onclick="appendNumber(9)">9</button>
+        <button onclick="appendOperator('/')">/</button>
+        <button onclick="appendNumber(4)">4</button>
+        <button onclick="appendNumber(5)">5</button>
+        <button onclick="appendNumber(6)">6</button>
+        <button onclick="appendOperator('*')">*</button>
+        <button onclick="appendNumber(1)">1</button>
+        <button onclick="appendNumber(2)">2</button>
+        <button onclick="appendNumber(3)">3</button>
+        <button onclick="appendOperator('-')">-</button>
+        <button class="zero" onclick="appendNumber(0)">0</button>
+        <button onclick="calculateResult()">=</button>
+        <button onclick="appendOperator('+')">+</button>
+    </div>
+    <script>
+        let display = document.querySelector('.display');
+        let calculation = '';
+
+        function appendNumber(number) {
+            calculation += number;
+            display.textContent = calculation;
+        }
+
+        function appendOperator(operator) {
+            calculation += operator;
+            display.textContent = calculation;
+        }
+
+        function calculateResult() {
+            try {
+                display.textContent = eval(calculation);
+                calculation = '';
+            } catch (error) {
+                display.textContent = 'Error';
+                calculation = '';
+            }
+        }
+    </script>
+</body>
+
+</html>
